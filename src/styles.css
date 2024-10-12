@@ -1,0 +1,70 @@
+html {
+    font-family: 'Rubik Mono One', 'Permanent Marker';
+}
+
+body {
+    background-color: rgba(42, 46, 125, 0.384);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.XBG {
+    position: fixed;
+    font-size: 500px;
+    color: rgb(20, 3, 67);
+    
+    top: 300px;
+    left: -100px;
+    
+    margin: 0;
+    padding: 0;
+}
+.OBG {
+    position: fixed;
+    font-size: 500px;
+    color: rgb(179, 22, 93);
+    
+    bottom: 300px;
+    right: -100px;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 490px;
+    height: 490px;
+    border: solid 3px rgb(14, 12, 17);
+    padding: 5px;
+
+    transition: border 0.1s;
+}
+
+.square {
+    font-size: 90px;
+    border: solid 1px rgb(14, 55, 50);
+    text-align: center;
+    padding-top: 25px;
+    height: 135px;
+}
+
+#XBorder {
+    border: solid 10px rgb(20, 3, 67);
+}
+
+#OBorder {
+    border: solid 10px rgb(179, 22, 93);
+}
+
+#X {
+    color: rgb(20, 3, 67);
+}
+
+#O {
+    color: rgb(179, 22, 93);
+}
